@@ -3,11 +3,15 @@
       --background: #0a0a0a;
       --background-header: #252527;
       --background-section: #1c1c1c;
+      --background-action: #2C2C30;
       --background-elevated: #303032;
+
+      --border-action: #3A3A40;
   
       --text-primary: #bfbfbf;
       --text-secondary: #888484;
 
+      --text-action: #bfbfbf;
       --text-link-hover: #f29766;
     }
   }

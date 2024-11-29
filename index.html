@@ -99,9 +99,9 @@
 
     <!-- Section Latest Releases/Updates -->
     <section class="section section-latest">
-      <div class="card-carousel">
+      <div id="manga-carousel" class="card-carousel">
 
-        <!-- Item Placeholder ("./src/scripts/carousel.js") -->
+        <!-- Item Placeholder ("./src/scripts/carousel_items/manga.js") -->
         <div class="card-item">
           <a href="#" class="card-item__cover">
             <img class="card-item__image" alt="" />
@@ -118,16 +118,189 @@
       </div>
 
       <!-- Carousel Controls -->
-      <div class="card-carousel-back" onclick="setPage(-1)">
-        <i class="nav__link-icon fa-solid fa-ellipsis-vertical fa-sm"></i>
+      <div class="card-carousel-back">
+        <i class="fa-solid fa-arrow-left fa-sm"></i>
       </div>
-      <div class="card-carousel-forward" onclick="setPage(1)">
-        <i class="nav__link-icon fa-solid fa-ellipsis-vertical fa-sm"></i>
+      <div class="card-carousel-forward">
+        <i class="fa-solid fa-arrow-right fa-sm"></i>
       </div>
     </section>
 
     <!-- Section -->
-    <section class="section"></section>
+    <section class="section">
+      <div class="section-inner-header">
+        <a class="section-title action-link" href="#">
+          <span>Currently Reading</span>
+          <i class="fa-solid fa-arrow-right fa-xs"></i>
+        </a>
+        <div class="section-options">
+          <select id="select-reading" class="action" name="reading-options">
+            <svg height='16px' width='16px' viewBox='0 0 16 16' fill='%23000000' xmlns='http://www.w3.org/2000/svg'>
+              <path
+                d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z' />
+            </svg>
+            <option value="day">Day</option>
+            <option value="week">Week</option>
+            <option value="month">Month</option>
+          </select>
+        </div>
+      </div>
+
+      <section class="section">
+        <!--  -->
+        <div class="card-carousel">
+          <div class="section__new"></div>
+          <div class="section__rising"></div>
+          <div class="section__popular"></div>
+        </div>
+      </section>
+    </section>
+
+    <!--  -->
+    <section class="section-split">
+
+      <!-- Section Latest Updates -->
+      <section class="section section-half">
+        <h1>Heelo</h1>
+      </section>
+
+      <!-- Column 2 -->
+      <section class="section-half">
+
+        <!-- Section Latest Forum -->
+        <section class="">
+          <div class="section-outer-header">
+            <a class="section-title action-link" href="#">
+              <span>Forum Latest</span>
+              <i class="fa-solid fa-arrow-right fa-xs"></i>
+            </a>
+          </div>
+          <section class="section">
+            <div class="section-forum-item">
+              <div class="section-forum-item-title">
+                <a href="#">Hey, this is a new message from the dev team</a>
+              </div>
+              <div class="section-forum-item-views">
+                <span>123</span>
+                <i class="fa-solid fa-eye fa-xs"></i>
+              </div>
+              <div class="section-forum-item-comments">
+                <span>1000</span>
+                <i class="fa-solid fa-comment fa-xs"></i>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- Section Latest Reviews -->
+        <section class="">
+          <div class="section-outer-header">
+            <a class="section-title action-link" href="#">
+              <span>Latest Reviews</span>
+              <i class="fa-solid fa-arrow-right fa-xs"></i>
+            </a>
+          </div>
+
+          <!-- Review Gallery -->
+          <section class="section-gallery">
+
+            <!-- Review Template -->
+            <div class="section review">
+              <div class="review-header">
+                <img class="review-image" alt="" />
+                <div class="image review-image"></div>
+              </div>
+              <div class="review-body">
+                <div class="review-body__rating">
+                  <i class="fa-solid fa-align-left fa-sm"></i>
+                  <span>Review</span>
+                  <i class="fa-solid fa-face-smile fa-sm"></i>
+                  <span>Positive</span>
+                </div>
+                <div class="review-body__title">Some manga title</div>
+                <div class="review-body__short">Несмотря на многих хейтеров и критиков, Боруто остаётся одним из моих
+                  любимых тайтлов за счё</div>
+                <div class="review-body__info">
+                  <div>
+                    <div class="review-body__info-views">
+                      <i class="fa-solid fa-eye fa-xs"></i>
+                      <span>1</span>
+                    </div>
+                    <div class="review-body__info-likes">
+                      <i class="fa-solid fa-thumbs-up fa-xs"></i>
+                      <span>1</span>
+                    </div>
+                  </div>
+                  <div class="review-body__info-time">Yesterday</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="section review">
+              <div class="review-header">
+                <img class="review-image" alt="" />
+                <div class="image review-image"></div>
+              </div>
+              <div class="review-body">
+                <div class="review-body__rating">
+                  <i class="fa-solid fa-align-left fa-sm"></i>
+                  <span>Review</span>
+                  <i class="fa-solid fa-face-smile fa-sm"></i>
+                  <span>Positive</span>
+                </div>
+                <div class="review-body__title">Some manga title</div>
+                <div class="review-body__short">Несмотря на многих хейтеров и критиков, Боруто остаётся одним из моих
+                  любимых тайтлов за счё</div>
+                <div class="review-body__info">
+                  <div>
+                    <div class="review-body__info-views">
+                      <i class="fa-solid fa-eye fa-xs"></i>
+                      <span>1</span>
+                    </div>
+                    <div class="review-body__info-likes">
+                      <i class="fa-solid fa-thumbs-up fa-xs"></i>
+                      <span>1</span>
+                    </div>
+                  </div>
+                  <div class="review-body__info-time">Yesterday</div>
+                </div>
+              </div>
+            </div>
+            <div class="section review">
+              <div class="review-header">
+                <img class="review-image" alt="" />
+                <div class="image review-image"></div>
+              </div>
+              <div class="review-body">
+                <div class="review-body__rating">
+                  <i class="fa-solid fa-align-left fa-sm"></i>
+                  <span>Review</span>
+                  <i class="fa-solid fa-face-smile fa-sm"></i>
+                  <span>Positive</span>
+                </div>
+                <div class="review-body__title">Some manga title</div>
+                <div class="review-body__short">Несмотря на многих хейтеров и критиков, Боруто остаётся одним из моих
+                  любимых тайтлов за счё</div>
+                <div class="review-body__info">
+                  <div>
+                    <div class="review-body__info-views">
+                      <i class="fa-solid fa-eye fa-xs"></i>
+                      <span>1</span>
+                    </div>
+                    <div class="review-body__info-likes">
+                      <i class="fa-solid fa-thumbs-up fa-xs"></i>
+                      <span>1</span>
+                    </div>
+                  </div>
+                  <div class="review-body__info-time">Yesterday</div>
+                </div>
+              </div>
+            </div>
+
+          </section>
+        </section>
+      </section>
+    </section>
 
   </main>
 
@@ -150,7 +323,7 @@
     });
   </script>
 
-  <script src="./src/scripts/carousel.js"></script>
+  <script type="module" src="./src/scripts/index.js"></script>
 </body>
 
 </html>
