@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+  <link rel="stylesheet" type="text/css" href="./src/css/animations.css" />
+  <link rel="stylesheet" type="text/css" href="./src/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="./src/css/media-theme.css" />
+  <link rel="stylesheet" type="text/css" href="./src/css/media-screen-1200.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-left"></div>
+
+    <!-- Navigation -->
+    <nav class="header__nav">
+
+      <!-- Logo -->
+      <!-- <a class="logo-link" href="#"> -->
+      <svg class="logo" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1676 512">
+        <path class="logo__path-outer"
+          d="M220 78v30c0 4.4-3.6 8-8 8h-86c-5.5 0-10 4.5-10 10v86c0 4.4-3.6 8-8 8H78c-4.4 0-8-3.6-8-8V82c0-6.6 5.4-12 12-12h130c4.4 0 8 3.6 8 8zM1456 434v-30c0-4.4 3.6-8 8-8h86c5.5 0 10-4.5 10-10v-86c0-4.4 3.6-8 8-8h30c4.4 0 8 3.6 8 8v130c0 6.6-5.4 12-12 12h-130c-4.4 0-8-3.6-8-8z">
+        </path>
+        <path class="logo__path-inner"
+          d="M166.7 354c-1.9 0-3.5-.7-4.9-2.1-1.4-1.4-2.1-3-2.1-4.9V165c0-2.1.7-3.7 2.1-5 1.4-1.3 3-2 4.9-2h30.2c3.2 0 5.5.8 7 2.4 1.5 1.6 2.4 2.8 2.8 3.8l49.3 88.2 49.3-88.2c.6-.9 1.5-2.2 2.9-3.8 1.4-1.6 3.7-2.4 6.9-2.4h30c2.1 0 3.8.7 5.2 2 1.4 1.3 2.1 3 2.1 5v182c0 1.9-.7 3.5-2.1 4.9a7.01 7.01 0 0 1-5.2 2.1h-33.3c-2.1 0-3.8-.7-5.2-2.1s-2.1-3-2.1-4.9V242l-31.4 58.5c-.9 1.7-2.1 3.2-3.6 4.5-1.5 1.3-3.5 2-6.2 2h-14.6c-2.6 0-4.7-.7-6.2-2s-2.7-2.8-3.6-4.5L207.3 242v105c0 1.9-.7 3.5-2 4.9-1.3 1.4-3 2.1-5 2.1h-33.6zM432.1 356.8c-10.1 0-19.1-1.9-27-5.7-7.9-3.8-14.2-9-18.9-15.5-4.7-6.5-7-13.9-7-22.1 0-13.3 5.4-23.8 16.2-31.5 10.8-7.7 25.2-13 43.1-15.8l35-5.3V257c0-6.7-1.4-11.9-4.2-15.4-2.8-3.5-7.9-5.3-15.4-5.3-5.2 0-9.5 1-12.7 3.1-3.3 2.1-5.8 4.9-7.7 8.4-1.7 2.4-4 3.6-7 3.6h-31.4c-2.1 0-3.6-.6-4.8-1.8a5.27 5.27 0 0 1-1.4-4.3c0-3.4 1.3-7.2 3.8-11.6 2.5-4.4 6.4-8.7 11.6-13 5.2-4.3 11.9-7.8 20.2-10.6 8.2-2.8 18.2-4.2 30-4.2 11.9 0 22.2 1.4 30.8 4.2 8.6 2.8 15.6 6.7 21 11.8 5.4 5 9.4 11 11.9 17.8 2.5 6.8 3.8 14.3 3.8 22.5V347c0 1.9-.7 3.5-2.1 4.9-1.4 1.4-3 2.1-4.9 2.1h-32.5c-2.1 0-3.7-.7-5-2.1-1.3-1.4-2-3-2-4.9v-9.8c-2.4 3.5-5.7 6.8-9.8 9.8-4.1 3-8.9 5.4-14.4 7.1-5.5 1.8-11.9 2.7-19.2 2.7zm13.2-31.9c5.4 0 10.3-1.2 14.7-3.5 4.4-2.3 7.8-6 10.4-10.9 2.5-4.9 3.8-11.2 3.8-18.6V288l-23.8 4.2c-8.8 1.5-15.2 3.8-19.2 6.9-4 3.1-6 6.7-6 10.8 0 3.2.9 5.9 2.8 8.1 1.9 2.2 4.3 4 7.4 5.2 3 1.1 6.3 1.7 9.9 1.7zM560.7 354c-2.1 0-3.7-.7-5-2.1-1.3-1.4-2-3-2-4.9V215.4a6.86 6.86 0 0 1 7-7h32.2c2.1 0 3.8.7 5.2 2 1.4 1.3 2.1 3 2.1 5V226c4.7-5.8 10.9-10.6 18.8-14.6s17.1-5.9 27.7-5.9c10.8 0 20.4 2.4 28.7 7.3s14.8 11.9 19.6 21.3c4.8 9.3 7.1 20.9 7.1 34.7V347c0 1.9-.7 3.5-2 4.9-1.3 1.4-3 2.1-5 2.1h-35.3c-1.9 0-3.5-.7-4.9-2.1-1.4-1.4-2.1-3-2.1-4.9v-76.4c0-8.8-2.1-15.5-6.3-20.3-4.2-4.8-10.4-7.1-18.6-7.1-7.7 0-13.8 2.4-18.3 7.1-4.6 4.8-6.9 11.5-6.9 20.3V347c0 1.9-.7 3.5-2.1 4.9s-3 2.1-4.9 2.1h-35zM805.1 415.6c-14.4 0-26.3-1.9-35.7-5.6-9.4-3.7-16.9-8.2-22.4-13.4-5.5-5.2-9.5-10.4-11.9-15.5-2.4-5.1-3.7-9.2-3.9-12.2-.2-2.1.5-3.8 2-5.2 1.5-1.4 3.3-2.1 5.3-2.1H774c1.9 0 3.4.5 4.5 1.4 1.1.9 2.1 2.4 2.8 4.5 1.1 2.1 2.4 4.2 3.9 6.3 1.5 2.1 3.7 4 6.6 5.5 2.9 1.5 6.9 2.2 11.9 2.2 5.6 0 10.3-.9 14-2.7 3.7-1.8 6.5-4.7 8.4-8.7 1.9-4 2.8-9.4 2.8-16.1v-18.8c-4.3 4.7-9.8 8.4-16.5 11.3-6.7 2.9-14.8 4.3-24.4 4.3-9.5 0-17.9-1.4-25.2-4.2-7.3-2.8-13.3-7-18.2-12.6-4.9-5.6-8.6-12.4-11.3-20.4-2.7-8-4.3-17.3-4.9-27.7-.2-4.9-.2-9.8 0-14.8.6-9.9 2.1-18.9 4.8-27 2.6-8.1 6.4-15 11.3-20.7 4.9-5.7 11.1-10.1 18.3-13.2 7.3-3.1 15.7-4.6 25.2-4.6 10.1 0 18.7 1.9 25.9 5.7 7.2 3.8 13.1 8.6 17.8 14.4v-10.4c0-1.9.7-3.5 2-4.9 1.3-1.4 3-2.1 5-2.1h32.2c2.1 0 3.8.7 5.2 2.1 1.4 1.4 2.1 3 2.1 4.9V350c0 14.2-2.8 26.1-8.5 35.8-5.7 9.7-14 17.1-24.9 22.1s-24.2 7.7-39.7 7.7zm-2-101.1c6 0 10.8-1.3 14.6-3.9a24 24 0 0 0 8.3-10.1c1.8-4.1 2.8-8.5 2.9-13.2.2-2.1.3-4.9.3-8.7 0-3.7-.1-6.5-.3-8.4-.2-4.9-1.2-9.3-2.9-13.4a22.2 22.2 0 0 0-8.3-9.9c-3.7-2.5-8.6-3.8-14.6-3.8-6.2 0-11.1 1.3-14.7 3.9-3.6 2.6-6.3 6.2-7.8 10.6-1.6 4.5-2.6 9.4-2.9 14.8-.2 4.1-.2 8.3 0 12.6.4 5.4 1.4 10.4 2.9 14.8 1.6 4.5 4.2 8 7.8 10.6 3.7 2.8 8.6 4.1 14.7 4.1zM954.9 356.8c-10.1 0-19.1-1.9-27-5.7-7.9-3.8-14.2-9-18.9-15.5-4.7-6.5-7-13.9-7-22.1 0-13.3 5.4-23.8 16.2-31.5 10.8-7.7 25.2-13 43.1-15.8l35-5.3V257c0-6.7-1.4-11.9-4.2-15.4-2.8-3.5-7.9-5.3-15.4-5.3-5.2 0-9.5 1-12.7 3.1-3.3 2.1-5.8 4.9-7.7 8.4-1.7 2.4-4 3.6-7 3.6h-31.4c-2.1 0-3.6-.6-4.8-1.8a5.27 5.27 0 0 1-1.4-4.3c0-3.4 1.3-7.2 3.8-11.6 2.5-4.4 6.4-8.7 11.6-13 5.2-4.3 11.9-7.8 20.2-10.6 8.2-2.8 18.2-4.2 30-4.2 11.9 0 22.2 1.4 30.8 4.2 8.6 2.8 15.6 6.7 21 11.8 5.4 5 9.4 11 11.9 17.8 2.5 6.8 3.8 14.3 3.8 22.5V347c0 1.9-.7 3.5-2.1 4.9-1.4 1.4-3 2.1-4.9 2.1h-32.5c-2.1 0-3.7-.7-5-2.1-1.3-1.4-2-3-2-4.9v-9.8c-2.4 3.5-5.7 6.8-9.8 9.8-4.1 3-8.9 5.4-14.4 7.1-5.5 1.8-11.9 2.7-19.2 2.7zm13.1-31.9c5.4 0 10.3-1.2 14.7-3.5 4.4-2.3 7.8-6 10.4-10.9 2.5-4.9 3.8-11.2 3.8-18.6V288l-23.8 4.2c-8.8 1.5-15.2 3.8-19.2 6.9-4 3.1-6 6.7-6 10.8 0 3.2.9 5.9 2.8 8.1 1.9 2.2 4.3 4 7.4 5.2 3.1 1.1 6.4 1.7 9.9 1.7zM1086.5 354c-2.1 0-3.7-.7-5-2.1-1.3-1.4-2-3-2-4.9V165a6.86 6.86 0 0 1 7-7h37a6.86 6.86 0 0 1 7 7v146.7h84.8c2.1 0 3.7.7 5 2.1 1.3 1.4 2 3.1 2 5.2v28c0 1.9-.7 3.5-2 4.9-1.3 1.4-3 2.1-5 2.1h-128.8zM1253.6 354c-2.1 0-3.7-.7-5-2.1-1.3-1.4-2-3-2-4.9V165a6.86 6.86 0 0 1 7-7h37.5c2.1 0 3.8.7 5.2 2 1.4 1.3 2.1 3 2.1 5v182c0 1.9-.7 3.5-2.1 4.9a7.01 7.01 0 0 1-5.2 2.1h-37.5zM1344.4 354c-2.1 0-3.7-.7-5-2.1-1.3-1.4-2-3-2-4.9V165a6.86 6.86 0 0 1 7-7h85.4c16.1 0 29.2 2.2 39.5 6.7s17.9 10.9 22.8 19.2c4.9 8.3 7.4 18.2 7.4 29.5 0 6.7-1.3 12.6-3.8 17.8-2.5 5.1-5.6 9.4-9.2 12.7-3.6 3.4-7 5.8-10.2 7.3 7.1 3.4 13.4 8.9 18.9 16.5 5.5 7.7 8.3 16.6 8.3 26.9 0 12.3-2.8 22.9-8.3 31.8-5.5 8.9-13.5 15.7-24.1 20.4-10.5 4.8-23.5 7.1-38.8 7.1h-87.9zm43.4-118.2h36.4c7.7 0 13.4-2 17.2-6 3.8-4 5.7-9 5.7-15s-1.9-10.9-5.7-14.7c-3.8-3.8-9.6-5.7-17.2-5.7h-36.4v41.4zm0 81.8h38.9c8 0 14.1-2.3 18.2-7s6.2-10 6.2-16c0-6.5-2.1-12-6.3-16.5-4.2-4.5-10.2-6.7-18.1-6.7h-38.9v46.2z">
+        </path>
+      </svg>
+      <!-- </a> -->
+
+      <!-- Navigation Links -->
+      <div class="header__nav-main">
+        <a class="nav__link">
+          <i class="nav__link-icon fa-solid fa-layer-group fa-sm"></i>
+          <span class="nav__link-text">Catalog</span>
+          <i class="nav__link-icon fa-solid fa-caret-down fa-xs"></i>
+        </a>
+        <a class="nav__link">
+          <i class="nav__link-icon fa-solid fa-magnifying-glass fa-sm"></i>
+          <span class="nav__link-text">Search</span>
+        </a>
+        <a class="nav__link">
+          <i class="nav__link-icon fa-solid fa-comments fa-sm"></i>
+          <span class="nav__link-text">Forum</span>
+        </a>
+        <div class="nav__group">
+          <!-- More Button -->
+          <a id="nav-more" class="nav__link">
+            <i class="nav__link-icon fa-solid fa-ellipsis fa-sm"></i>
+          </a>
+
+          <!-- More dropdown -->
+          <div class="nav__link-menu">
+            <ul>
+              <li><a href="#">Option 1</a></li>
+              <li><a href="#">Option 2</a></li>
+              <li><a href="#">Option 3</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Profile -->
+      <div class="header__nav-profile">
+        <a class="nav__link">
+          <i class="nav__link-icon fa-solid fa-plus fa-sm"></i>
+        </a>
+
+        <!-- Notifications -->
+        <div id="nav-notifications" class="nav__group">
+          <a class="nav__link">
+            <i class="nav__link-icon fa-solid fa-bell fa-sm"></i>
+          </a>
+          <div class="notifications">
+            <span>99</span>
+          </div>
+        </div>
+
+        <a class="nav__link">
+          <img class="nav__link-image" alt="I" />
+          <div class="nav__link-image" src="ds"></div>
+        </a>
+        <a class="nav__link">
+          <i class="nav__link-icon fa-solid fa-ellipsis-vertical fa-sm"></i>
+        </a>
+      </div>
+    </nav>
+    <div class="header-right"></div>
+  </header>
+
+  <main class="container-main">
+
+    <!-- Section Latest Releases/Updates -->
+    <section class="section section-latest">
+      <div class="card-carousel">
+
+        <!-- Item Placeholder ("./src/scripts/carousel.js") -->
+        <div class="card-item">
+          <a href="#" class="card-item__cover">
+            <img class="card-item__image" alt="" />
+            <div class="image"></div>
+            <div class="card-item__chapter">
+              <span>Chapter 127.5</span>
+            </div>
+          </a>
+          <div class="card-item__caption">
+            <a class="card-item__caption-name">I have reincarnated as a cute girl</a>
+            <span class="card-item__caption-type">Manga</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel Controls -->
+      <div class="card-carousel-back" onclick="setPage(-1)">
+        <i class="nav__link-icon fa-solid fa-ellipsis-vertical fa-sm"></i>
+      </div>
+      <div class="card-carousel-forward" onclick="setPage(1)">
+        <i class="nav__link-icon fa-solid fa-ellipsis-vertical fa-sm"></i>
+      </div>
+    </section>
+
+    <!-- Section -->
+    <section class="section"></section>
+
+  </main>
+
+  <footer class="footer">
+    <p>footer</p>
+  </footer>
+
+  <script>
+    document.querySelector('#nav-more').addEventListener('click', function (e) {
+      const dropdownMenu = document.querySelector('.nav__link-menu');
+      dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+
+      // Optional: Close the menu if clicked outside  
+      document.addEventListener('click', function outsideClick(event) {
+        if (!e.target.closest('#nav-more') && !event.target.closest('.nav__link-menu')) {
+          dropdownMenu.style.display = 'none';
+          document.removeEventListener('click', outsideClick);
+        }
+      });
+    });
+  </script>
+
+  <script src="./src/scripts/carousel.js"></script>
+</body>
+
+</html>

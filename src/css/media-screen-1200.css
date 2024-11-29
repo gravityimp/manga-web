@@ -1,0 +1,12 @@
+@media only screen and (max-width: 1200px) {
+  .header-left,
+  .header-right {
+    display: none;
+  }
+
+  .header,
+  .footer {
+    width: 100%;
+    padding: 0 16px;
+  }
+}
